@@ -1,0 +1,1278 @@
+/* BASIC CHANGES */
+* {
+    /* making changes to the entire website */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html {
+    /* this wil make the rem/10px 1 */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+.navbar a {
+    /* adding a font family to all the headings */
+    font-family: 'Gluten', cursive;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h4 {
+    padding: 1rem;
+}
+
+p {
+    /* adding line height so it doesn't look to cluttered */
+    line-height: 3rem;
+    padding: 1rem 0;
+}
+
+span {
+    color: #FF165D;
+    font-weight: 400;
+}
+
+/* LANDING PAGE */
+#about,
+#collection-new {
+    background-color: #F0F0F0;
+}
+
+#footer {
+    background-color: #000;
+    font-size: 1.4rem;
+    padding: 3rem 0;
+    color: #fff;
+}
+
+#home .row {
+    margin-bottom: 4rem;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    /* removes bullets */
+    list-style-type: none;
+}
+
+nav ul li {
+    /* places everything next to each other with some space inbetween */
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    height: 6rem;
+    padding: 3rem 2rem;
+    background-color: #000;
+}
+
+.brand-name {
+    font-size: 3rem;
+}
+
+.navbar a {
+    color: #fff;
+    /* removes the underline */
+    text-decoration: none;
+}
+
+/* creating a flexbox for structure */
+.row {
+    display: flex;
+    align-items: center;
+    /* will push the columns on smaller screens */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    /* flex basis of 50% will craete 2 columns */
+    flex-basis: 45%;
+    margin-top: 2rem;
+}
+
+/* home page image */
+#home-page .col-2 img {
+    padding: 1rem 4rem;
+    margin: 2rem 15% 2rem 20%;
+    /* 85% height of it's parent element */
+    height: 85%;
+    border-radius: 0.5rem;
+}
+
+/* slider styling */
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    width: 450%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 85%;
+    height: 85%;
+}
+
+/* slider manual navigation */
+.nav-manual {
+    position: absolute;
+    width: 1000px;
+    margin-top: -170px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #FF165D;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #FF165D;
+}
+
+#img-radio1:checked~.slide-first {
+    margin-left: 0;
+}
+
+#img-radio2:checked~.slide-first {
+    margin-left: -20%;
+}
+
+#img-radio3:checked~.slide-first {
+    margin-left: -40%;
+}
+
+#img-radio4:checked~.slide-first {
+    margin-left: -60%;
+}
+
+/* slider automatic navigation */
+.nav-auto {
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: 756.3px;
+}
+
+.nav-auto div {
+    border: 2px solid #FF165D;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#img-radio1:checked~.nav-auto .auto-btn1 {
+    background: #FF165D;
+}
+
+#img-radio2:checked~.nav-auto .auto-btn2 {
+    background: #FF165D;
+}
+
+#img-radio3:checked~.nav-auto .auto-btn3 {
+    background: #FF165D;
+}
+
+#img-radio4:checked~.nav-auto .auto-btn4 {
+    background: #FF165D;
+}
+
+/* account and cart buttons */
+.account a {
+    padding: 0.8rem 1rem;
+    color: #FF165D;
+}
+
+.account a:hover {
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+/* navbar items */
+.page-click:hover {
+    color: #FF165D;
+}
+
+#home-page .col-2 p {
+    font-size: 2rem;
+    width: 50%;
+}
+
+/* shop now button */
+#home-page .col-2 a {
+    padding: 1rem;
+    border: 2px solid #FF165D;
+    border-radius: 10px;
+    color: #FF165D;
+    font-size: 1.5rem;
+    margin-left: 37%;
+    text-decoration: none;
+}
+
+/* shop now button hover state */
+#home-page .col-2 a:hover {
+    background-color: #000;
+    border: 1px solid #000;
+    transition-duration: 0.4s;
+}
+
+/* ABOUT SECTION */
+.about-container {
+    /* will only take up 60% of the page and align to middle */
+    width: 60%;
+    margin: 0% 20%;
+}
+
+#about h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#about img {
+    /* center align the image */
+    max-width: 90%;
+    margin: 0 5%;
+    height: 30%;
+}
+
+.about-container {
+    padding: 3rem 4rem;
+}
+
+#about .col-2 h1,
+#about .col-2 p {
+    padding: 0 2.5rem;
+}
+
+#about p {
+    font-size: 2rem;
+}
+
+.about-last-par {
+    padding: 4rem 0;
+}
+
+/* testimonials images */
+#testimonials img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 200px;
+    border: 2px solid #FF165D;
+}
+
+
+#testimonials .col-3 {
+    flex-basis: 20%;
+    margin: 6rem 0;
+    padding: 1.5rem;
+    border: 2px solid #000;
+    box-shadow: 0 2rem 1rem #000;
+}
+
+/* hover state of the testimonial blocks */
+#testimonials .col-3:hover {
+    cursor: pointer;
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.review {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.review ul,
+#collection-new ul,
+#catalogue ul {
+    list-style-type: none;
+}
+
+.review li,
+#collection-new li,
+#catalogue li {
+    display: inline-block;
+}
+
+#testimonials h4 {
+    margin-top: 2rem;
+}
+
+#testimonials p {
+    font-size: 2rem;
+}
+
+#testimonials {
+    margin-bottom: 5rem;
+}
+
+.review li {
+    color: #FF165D;
+}
+
+/* FOOTER SECTION */
+/* styling the p and anchor tags in the footer section */
+#footer p,
+#footer a {
+    color: gray;
+}
+
+#footer h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* flex basis to create the 4 columns */
+.footer-col-1 {
+    flex-basis: 20%;
+}
+
+.footer-col-1 p {
+    margin-bottom: 2rem;
+}
+
+.footer-col-1 a {
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.footer-col-1 a:hover {
+    border: 2px solid #fff
+}
+
+.footer-col-2 {
+    flex-basis: 20%;
+}
+
+.footer-col-2 img {
+    width: 18rem;
+    height: 6rem;
+}
+
+.footer-col-3 {
+    flex-basis: 20%;
+}
+
+.footer-col-3 li {
+    padding-top: 1rem;
+}
+
+.footer-col-4 {
+    flex-basis: 30%;
+}
+
+.footer-col-3 ul,
+.footer-col-4 ul {
+    list-style-type: none;
+}
+
+.footer-col-3 a {
+    text-decoration: none;
+}
+
+/* hover state of the anchor tags in the footer */
+#footer a:hover {
+    color: #fff;
+}
+
+input[type="email"] {
+    /* styling all the input types of email */
+    width: 50%;
+    height: 4.5rem;
+}
+
+.footer-col-4 li {
+    display: inline-block;
+}
+
+.footer-col-4 ul li a {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+}
+
+.footer-line {
+    margin-top: 3rem;
+    width: 75%;
+    height: 1px;
+    color: gray;
+    margin-left: 12.5%;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+/* CATALOGUE PAGE */
+/* adora catalogue image */
+#landing-page img {
+    width: 100%;
+    height: 55vh;
+}
+
+#promos h1,
+#collection-new h1,
+#catalogue h1 {
+    text-align: center;
+    padding: 4rem 0;
+    font-weight: 700;
+}
+
+/* creating layout for the promos section */
+#promos .col-3 {
+    flex-basis: 25%
+}
+
+#promos .row .col-3 a {
+    text-decoration: none;
+}
+
+#promos .row .col-3 a h3 {
+    text-align: center;
+    padding: 2rem 0;
+    color: #000;
+    font-size: 2rem;
+}
+
+/* adding borders tp the promos images */
+#promos .row .col-3 a img {
+    border: 2px solid #000;
+    /* adding a color filter to the images */
+    filter: grayscale(80%);
+}
+
+#promos .row .col-3 a img:hover {
+    filter: grayscale(0%);
+}
+
+#collection-new .row,
+#catalogue .row {
+    width: 80vw;
+    margin-left: 10vw;
+    padding-bottom: 3rem;
+}
+
+.col-4 {
+    width: 20%;
+    padding: 1rem;
+}
+
+#collection-new img,
+#catalogue img,
+.top-picks img {
+    width: 100%;
+}
+
+#collection-new a,
+#catalogue a,
+.top-picks a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#collection-new p,
+#collection-new h3,
+#catalogue p,
+#catalogue h3,
+.top-picks p,
+.top-picks h3 {
+    line-height: 0;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+/* hover state of products */
+.col-4:hover {
+    /* relative to it's parent so it can move when hovered on */
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    /* box shadow to make it seem like it's coming of the page */
+    box-shadow: 0 1rem 1rem #000;
+    border-radius: 15px;
+}
+
+#catalogue {
+    /* leaving some space between the catalogue page and footer */
+    padding-bottom: 6rem;
+}
+
+#catalogue img,
+.top-picks img {
+    border: 1px solid #000;
+    border-radius: 1rem;
+}
+
+.price {
+    display: flex;
+}
+
+/* original price how much it costs without a special applied to it */
+.original-price {
+    text-decoration: line-through;
+    color: #000 !important;
+}
+
+/* new price is afterwards the % has been calculated */
+.new-price {
+    float: right;
+    color: red !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+/* add to cart buttons styling */
+.addToCartBtn {
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.addToCartBtn:hover {
+    background-color: #000;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+/* SIGN IN AND SIGN UP PAGES */
+
+#sign-in,
+#sign-up {
+    background-color: #F0F0F0;
+    height: 70vh;
+    color: #000;
+}
+
+#sign-up {
+    height: 80vh;
+}
+
+#sign-in form,
+#sign-up form {
+    /* adding some styling to the froms so it doesnt fade away in the background */
+    border-radius: 2rem;
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    /* aligning all the content within the forms */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* adding animation so background color can change between two shades of white-grey */
+    animation-name: bg-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* using keyframes to create the changing background color animation for the sign in and sign up forms */
+@keyframes bg-color {
+    0% {
+        background-color: #F0F0F0;
+    }
+
+    50% {
+        background-color: #FFF;
+    }
+
+    100% {
+        background-color: #F0F0F0;
+    }
+}
+
+#sign-up form {
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    /* styling for all input types mentioned */
+    width: 85%;
+    height: 8%;
+    padding: 1rem;
+    border: 1.5px solid grey;
+    margin-bottom: 1rem;
+}
+
+.login-btn {
+    padding: 1rem 38.5%;
+    color: #fff !important;
+    text-decoration: none;
+    border: 1px solid #000;
+    background-color: #000;
+    position: relative;
+    font-weight: 100 !important;
+    top: 3.5rem;
+}
+
+/* login button hover state */
+.login-btn:hover {
+    background-color: transparent;
+    color: #000 !important;
+    transition-duration: 0.5s;
+}
+
+#sign-in a,
+#sign-up a {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+}
+
+#sign-in p,
+#sign-up p {
+    font-size: 2rem;
+    color: grey;
+    margin: 2rem 0;
+}
+
+#sign-up .login-btn {
+    padding: 1rem 30%;
+    top: 4rem;
+}
+
+input[type=checkbox],
+#sign-up label {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: grey;
+}
+
+/* CONTACT US SECTION */
+.container {
+    /* creating the background */
+    background-image: url(../Images/fashion-bg.jpg);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem 10rem;
+}
+
+.information {
+    background-color: #000;
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: 2px solid #000;
+    border-radius: 2rem;
+}
+
+.information a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 3rem;
+    border: 1px solid #F0F0F0;
+    padding: 1rem;
+}
+
+.email-btn {
+    position: relative;
+    top: 25%;
+}
+
+.call-btn {
+    position: relative;
+    top: 50%;
+}
+
+.contact-box {
+    /* adding some styling so it doesn't fade away in the colorfull background */
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 2rem;
+    width: 70%;
+    height: 65%;
+    /* absolute positioning to get it in a specific place */
+    position: absolute;
+    top: 18%;
+    left: 15%;
+    right: 15%;
+    /* aligning all the content to the middle of the page */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-box h1 {
+    padding-bottom: 2rem;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.content input[type="email"],
+.content input[type="text"] {
+    width: 50%;
+}
+
+textarea {
+    width: 50%;
+    padding: 6rem 1rem;
+}
+
+/* submit button */
+.submit-btn {
+    position: relative;
+    top: 2rem;
+    left: 23%;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* submit button hover state */
+.submit-btn:hover {
+    background-color: transparent;
+    color: #000;
+    transition-duration: 0.5s;
+}
+
+/* SHIPPING INFO & SIZE GUIDE PAGE */
+#delivery h1 {
+    padding-top: 1rem;
+}
+
+.delivery-container {
+    /* content won't take up more than 50% width */
+    width: 50%;
+    margin: 0 25%;
+    padding: 8rem;
+    color: #000;
+}
+
+table {
+    width: 100%;
+    /* removes all border spacing */
+    border-spacing: 0;
+}
+
+/* adding different table styling to the table on the size-guide page */
+#size-guide table {
+    width: 70%;
+    margin: 2rem 15%;
+}
+
+#size-guide h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+th,
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+}
+
+th {
+    font-size: 2rem;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
+#delivery p {
+    font-size: 1.5rem;
+}
+
+#delivery h2 {
+    text-align: center;
+    padding: 3rem;
+    font-size: 3.5rem;
+}
+
+.size-container {
+    padding-bottom: 7rem;
+}
+
+.size-container td {
+    text-align: center;
+}
+
+/* will with every even number style the content as follows */
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* individual product pages */
+/* add to cart button */
+.add-to-cart-btn {
+    padding: 1rem 8rem;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    position: relative;
+    top: 2rem;
+}
+
+/* add to cart button hover state */
+.add-to-cart-btn:hover {
+    background-color: transparent;
+    color: #000;
+    transition-duration: 0.4s;
+}
+
+/* ratings of the product */
+.ratings ul,
+.size-selection ul {
+    /* places the list items next to each other and removes bullets */
+    display: flex;
+    list-style-type: none;
+}
+
+.ratings ul li,
+.size-selection ul li {
+    font-size: 1.5rem;
+    padding: 0.1rem;
+}
+
+.info-container {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    padding: 6rem 0;
+}
+
+.main-img img {
+    width: 550px;
+    height: 800px;
+}
+
+
+#product-info .col-2 h3 {
+    font-size: 3rem;
+    color: GREY;
+}
+
+.price-unchanged {
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    color: #000 !important;
+}
+
+.info-container p {
+    font-size: 2rem;
+    color: grey;
+}
+
+.size-selection ul li {
+    border: 1px solid grey;
+    padding: 1rem;
+    width: 5rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    /* will make the cursor a pointer upon hover */
+    cursor: pointer;
+}
+
+.size-selection a {
+    /* removes underline */
+    text-decoration: none;
+    color: grey;
+}
+
+.size-selection ul li:hover {
+    transition-duration: 0.5s;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.product-details {
+    margin-top: 10rem;
+    padding: 2rem;
+}
+
+.mini-img .row .col-3 {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.mini-img img {
+    height: 210px;
+    width: 140px;
+    box-shadow: 0 1rem 1rem 0 #F0F0F0;
+}
+
+.mini-img {
+    margin: 0 15%;
+}
+
+.product-details ul li {
+    font-size: 1.8rem;
+    color: grey;
+    padding: 1.5px;
+}
+
+.product-details h4 {
+    font-size: 1.2rem;
+    padding: 2px;
+}
+
+.img-flex {
+    flex-basis: 70%;
+    text-align: center;
+}
+
+.content-flex {
+    flex-basis: 30%;
+}
+
+.col-5 {
+    /* this will make everything place next to eachopther with some space in between */
+    width: 15%;
+}
+
+.top-picks {
+    width: 80%;
+    margin: 5rem 10%;
+}
+
+.top-picks ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.review-amount {
+    padding: 0 0.5rem;
+    text-decoration: underline;
+}
+
+.back-btn {
+    /* back button so the user can go back to the catalogue page at the position they were */
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Shopping Cart section */
+.empty-cart {
+    width: 50%;
+    height: 35vh;
+    margin: 5% 25% 10% 25%;
+    text-align: center;
+    display: none;
+}
+
+.empty-cart a {
+    font-size: 2rem;
+    color: #FF165D;
+}
+
+.empty-cart p {
+    font-size: 2rem;
+}
+
+.empty-cart ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    left: 42%;
+}
+
+.empty-cart ul li {
+    padding: 1rem;
+}
+
+.cartPage {
+    width: 80%;
+    margin: 0 10% 5% 10%;
+    display: block;
+}
+
+.cartPage table {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+.cartPage table th {
+    text-align: left;
+}
+
+.cartItems .item-info {
+    display: flex;
+}
+
+.cartItems .item-info p {
+    padding: 0 0 0 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.cartItems img {
+    width: 100px;
+}
+
+.cartPage .price-sub {
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.cartPage .remove-item {
+    float: right;
+    width: 10rem;
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid #FF165D;
+    cursor: pointer;
+    color: #FF165D;
+    border-radius: 1rem;
+}
+
+.cartPage .remove-item:hover {
+    background-color: #FF165D;
+    color: #000;
+}
+
+.cartPage .discount {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cartPage input[type="text"] {
+    width: 50%;
+    height: 4rem;
+    margin: 2rem 0 2rem 20%;
+}
+
+.discount {
+    background-color: #F0F0F0;
+}
+
+#discountCodeBtn {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 8%;
+    height: 4rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#discountCodeBtn:hover {
+    color: #000;
+    background-color: transparent;
+    transition-duration: 0.4s;
+}
+
+.cartPage h1 {
+    padding: 2rem 0 2rem 0;
+}
+
+.deliveryOptions {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    display: grid;
+    place-content: center;
+    box-sizing: border-box;
+}
+
+.rad-label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+    background: #F0F0F0;
+}
+
+.standardShipping {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.rad-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: #FF165D;
+    position: relative;
+    left: -20px;
+}
+
+.rad-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+    transform: scale(0);
+}
+
+.rad-input:checked~.rad-text {
+    color: hsl(0, 0%, 40%);
+}
+
+.rad-text {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    font-size: 2rem;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.totalBox {
+    width: 40%;
+    padding: 1rem 2rem;
+    margin: 5% 30% 5% 30%;
+    font-size: 2rem;
+    background-color: #F0F0F0;
+}
+
+
+.totalBox p {
+    display: inline-block;
+}
+
+
+#confirmOrder {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 20%;
+    margin-left: 70%;
+    color: #000;
+    background-color: #FF165D;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#confirmOrder:hover {
+    background-color: transparent;
+    transition-duration: 0.4s;
+}
+
+/* RESPONSIVNESS */
+@media only screen and (max-width: 1474px) {
+
+    /* INDEX.HTML */
+    #home-page .col-2 img {
+        margin: 0 2rem 3rem 2rem;
+        /* 85% height of it's parent element */
+        max-height: 85%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .col-2 {
+        flex-basis: 80%;
+    }
+
+    #home-page .col-2 img {
+        margin: 2rem 15% 3rem 15%;
+        /* 85% height of it's parent element */
+        max-height: 85%;
+    }
+}
+
+/* WILL ADD THE WHOLE WEBSITES RESPONSIVE DESIGN OVER TIME BEFORE ADDING THE JS IN A LATER TASK */

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADORA | Contact Us</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--Including jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- JS Link -->
+    <script src="index.js" async></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;400&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- credits to fashionova - got products, product info and images from website -->
+    <!-- https://www.fashionnova.com/pages/about-us -->
+</head>
+
+
+<body>
+    <!-- HOME Page -->
+    <div id="home-page">
+        <!-- creation of the navbar -->
+        <div class="navbar">
+            <!-- business logo in navbar -->
+            <div class="logo">
+                <a class="brand-name" href="#">ADORA</a>
+            </div>
+            <nav>
+                <!-- navbar items - clickable links -->
+                <ul>
+                    <li><a href="index.html#home" class="page-click">Home</a></li>
+                    <li><a href="catalogue.html" class="page-click">Catalogue</a></li>
+                    <li><a href="index.html#about" class="page-click">About</a></li>
+                    <li><a href="contact.html" class="page-click">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- sign in and sign up buttons -->
+            <div class="account">
+                <a href="sign-in.html"><i class="far fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- landing page -->
+    <div id="landing-page">
+        <!-- image at the top of the page -->
+        <img src="images/adora-banner.png" alt="ADORA banner">
+    </div>
+
+    <!-- promos section -->
+    <div id="promos">
+        <!-- promo section heading -->
+        <h1>PROMOS</h1>
+        <!-- row class for flexbox structure -->
+        <div class="row">
+            <!-- first column -->
+            <div class="col-3">
+                <a href="#tops"><img src="images/tops-promo.jpg" alt="">
+                    <h3>TOPS</h3>
+                </a>
+            </div>
+            <!-- second column -->
+            <div class="col-3">
+                <a href="#bottoms"><img src="images/bottoms-promo.jpg" alt="">
+                    <h3>BOTTOMS</h3>
+                </a>
+            </div>
+            <!-- third column -->
+            <div class="col-3">
+                <a href="#"><img src="images/sale-promo.jpg" alt="">
+                    <h3>SALE</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- New collection section -->
+    <div id="collection-new">
+        <!-- new collection heading -->
+        <h1>NEW COLLECTION</h1>
+        <!-- row for flexbox -->
+        <div class="row">
+            <!-- first item -->
+            <div class="col-4 shop-item">
+                <!-- image -->
+                <a href="glam1.html"><img class="product-image" src="Images/sequin-dress1.jpg" alt="Endless Nights Sequin Maxi Dress - Black">
+                    <!-- product name -->
+                    <h3 class="product-name">Endless Nights Sequin Maxi Dress</h3>
+                    <!-- product rating -->
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li>12 reviews</li>
+                    </ul>
+                    <!-- product price -->
+                    <p class="current-price">R 1,012.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- second item -->
+            <div class="col-4 shop-item">
+                <a href="glam2.html"><img class="product-image" src="Images/sequinRed-dress1.jpg"
+                        alt="Highlight Sequin Maxi Dress - Burgundy">
+                    <!-- product name -->
+                    <h3 class="product-name">Highlight Sequin Maxi Dress</h3>
+                    <!-- product rating -->
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li>20 reviews</li>
+                    </ul>
+                    <!-- product price -->
+                    <p class="current-price">R 723.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- third item -->
+            <div class="col-4 shop-item">
+                <a href="glam3.html"><img class="product-image" src="Images/sequinMaxi-dress1.jpg"
+                        alt="Can't Be Stopped Sequin Maxi Dress - Rose Gold">
+                    <!-- PRODUCT NAME -->
+                    <h3 class="product-name">Can't Be Stopped Sequin Maxi Dress</h3>
+                    <!-- product rating -->
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li>2 reviews</li>
+                    </ul>
+                    <!-- product price -->
+                    <p class="current-price">R 867.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- fourth product -->
+            <div class="col-4 shop-item">
+                <a href="glam4.html"><img class="product-image" src="Images/blue-dress.jpg" alt="Luminous Sequin Velvet Maxi Dress - Royal">
+                    <!-- product name -->
+                    <h3 class="product-name">Luminous Sequin Velvet Maxi Dress</h3>
+                    <!-- product rating -->
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li>4 reviews</li>
+                    </ul>
+                    <!-- product price -->
+                    <p class="current-price">R 1,012.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- catalogue section -->
+    <div id="catalogue">
+        <h1>CATALOGUE</h1>
+        <!-- TOPS -->
+        <div class="row" id="tops">
+            <!-- top-1 -->
+            <div class="col-4 shop-item">
+                <a href="top1.html"><img class="product-image" src="Images/midnight-top1.jpg" alt="Midnight Express Top - Heather Grey">
+                    <h3 class="product-name">Midnight Express Top</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>233 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 408.00</p>
+                        <p class="new-price current-price">R 244.80</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- top-2 -->
+            <div class="col-4 shop-item">
+                <a href="top2.html"><img class="product-image" src="Images/work-top1.jfif" alt="You Better Work Shirt - Black">
+                    <h3 class="product-name">You Better Work Shirt</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li>339 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 408.00</p>
+                        <p class="new-price current-price">R 244.80</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- top-3 -->
+            <div class="col-4 shop-item">
+                <a href="top3.html"><img class="product-image" src="Images/soft-top1.jpg" alt="Reminds Me Of You Top - Soft White">
+                    <h3 class="product-name">Reminds Me Of You Top</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li>56 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 262.00</p>
+                        <p class="new-price current-price">R 157.20</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- top-4 -->
+            <div class="col-4 shop-item">
+                <a href="top4.html"><img class="product-image" src="Images/sweather-top1.jpg" alt="Next To Me Mock Neck Sweater - Black">
+                    <h3 class="product-name">Next To Me Mock Neck Sweater</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>260 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 509.00</p>
+                        <p class="new-price current-price">R 305.40</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+        </div>
+        <!-- BOTTOMS -->
+        <div class="row" id="bottoms">
+            <!-- bottom-1 -->
+            <div class="col-4 shop-item">
+                <a href="bottom1.html"><img class="product-image" src="Images/darkDenim-jean1.jpg"
+                        alt="Statuesque Booty Lifting Jeans - Dark Denim">
+                    <h3 class="product-name">Statuesque Booty Lifting Jeans</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>340 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 437.00</p>
+                        <p class="new-price current-price">R 262.20</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- bottom-2 -->
+            <div class="col-4 shop-item">
+                <a href="bottom2.html"><img class="product-image" src="Images/highRise-jean1.jpg"
+                        alt="Dream Girl High Rise Skinny Jeans - Medium Blue Wash">
+                    <h3 class="product-name">Dream Girl High Rise Skinny Jeans</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>242 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 582.00</p>
+                        <p class="new-price current-price">R 349.20</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- bottom-3 -->
+            <div class="col-4 shop-item">
+                <a href="bottom3.html"><img class="product-image" src="Images/skinny-jean1.jpg"
+                        alt="Super High Waist Denim Skinnies - Indigo">
+                    <h3 class="product-name">Super High Waist Denim Skinnies</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>3916 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 509.00</p>
+                        <p class="new-price current-price">R 305.40</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- bottom-4 -->
+            <div class="col-4 shop-item">
+                <a href="bottom4.html"><img class="product-image" src="Images/wash-jean1.jpg" alt="Needing Something Jeans - Light Blue Wash">
+                    <h3 class="product-name">Needing Something Jeans</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>940 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 364.00</p>
+                        <p class="new-price current-price">R 218.40</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+        </div>
+        <!-- SHOES -->
+        <div class="row" id="shoes">
+            <!-- shoe-1 -->
+            <div class="col-4 shop-item">
+                <a href="shoe1.html"><img class="product-image" src="Images/loveHeel-shoe1.jpg" alt="Never Ending Love Heels - Nude">
+                    <h3 class="product-name">Never Ending Love Heels</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>36 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 509.00</p>
+                        <p class="new-price current-price">R 152.70</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- shoe-2 -->
+            <div class="col-4 shop-item">
+                <a href="shoe2.html"><img class="product-image" src="Images/bootie-shoe1.jpg" alt="Catch Me Later Bootie - Chocolate">
+                    <h3 class="product-name">Catch Me Later Bootie</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>69 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 582.00</p>
+                        <p class="new-price current-price">R 174.60</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- shoe-3 -->
+            <div class="col-4 shop-item">
+                <a href="shoe3.html"><img class="product-image" src="Images/heeled-shoe1.jpg" alt="Walking Out On You Heeled Booties - Nude">
+                    <h3 class="product-name">Walking Out On You Heeled Booties</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>60 reviews</li>
+                    </ul>
+                    <p class="current-price">R 582.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- shoe-4 -->
+            <div class="col-4 shop-item">
+                <a href="shoe4.html"><img class="product-image" src="Images/kneeBoots-shoe1.jpg"
+                        alt="Need More Attention Over The Knee Knit Boots - Chocolate">
+                    <h3 class="product-name">Need More Attention Over The Knee Knit Boots</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li>5 reviews</li>
+                    </ul>
+                    <p class="current-price">R 728.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+        </div>
+        <!-- DRESSES -->
+        <div class="row" id="dresses">
+            <!-- dress-1 -->
+            <div class="col-4 shop-item">
+                <a href="dress1.html"><img class="product-image" src="Images/frenzy-dress1.jpg" alt="Sugar Frenzy Dress - Black">
+                    <h3 class="product-name">Sugar Frenzy Dress</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>708 reviews</li>
+                    </ul>
+                    <p class="current-price">R 480.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- dress-2 -->
+            <div class="col-4 shop-item">
+                <a href="dress2.html"><img class="product-image" src="Images/midi-dress1.jpg" alt="Need You Midi Dress - White">
+                    <h3 class="product-name">Need You Midi Dress</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li>11 reviews</li>
+                    </ul>
+                    <p class="current-price">R 364.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- dress-3 -->
+            <div class="col-4 shop-item">
+                <a href="dress3.html"><img class="product-image" src="Images/ruched-dress1.jpg"
+                        alt="Fresh New Take Ruched Midi Dress - Black">
+                    <h3 class="product-name">Fresh New Take Ruched Midi Dress</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>68 reviews</li>
+                    </ul>
+                    <div class="price">
+                        <p class="original-price">R 582.00</p>
+                        <p class="new-price current-price">R 174.60</p>
+                    </div>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+            <!-- dress-4 -->
+            <div class="col-4 shop-item">
+                <a href="dress4.html"><img class="product-image" src="Images/bandage-dress1.jpg"
+                        alt="Night Is Young Bandage Mini Dress - Orange">
+                    <h3 class="product-name">Night Is Young Bandage Mini Dress</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li>7 reviews</li>
+                    </ul>
+                    <p class="current-price">R 451.00</p>
+                </a>
+                <button class="addToCartBtn">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER Page -->
+    <div id="footer">
+        <!-- using row class for flexbox layout -->
+        <div class="row">
+            <!-- first column -->
+            <div class="footer-col-1">
+                <!-- download app section -->
+                <h3>DOWNLOAD OUR APP</h3>
+                <p>Available for IOS and Android</p>
+                <a href=""><i class="fab fa-google-play"> Google Play</i></a>
+                <a href=""><i class="fab fa-apple"> App Store</i></a>
+            </div>
+            <!-- second column -->
+            <div class="footer-col-2">
+                <!-- brand and slogan section -->
+                <img src="images/ADORA-logos_whitecrop.png" alt="ADORA Logo">
+                <p>We strive to make women feel comfortable and glamoroous at all times with our fashion line!</p>
+            </div>
+            <!-- third column -->
+            <div class="footer-col-3">
+                <!-- other links section -->
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="shipping.html">Shipping info</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+            <!-- fourth column -->
+            <div class="footer-col-4">
+                <!-- email list sign up and social links section -->
+                <h3>SIGN UP FOR UPDATES + DISCOUNTS</h3>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </form>
+                <p>By signing up for email, you agree to Adora's
+                    <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+                <ul>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- T's & C's section -->
+        <hr class="footer-line">
+        <p class="copyright"><span>© 2021 ADORA</span>, LLC All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

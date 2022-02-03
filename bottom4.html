@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADORA | Contact Us</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--Including jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- JS Link -->
+    <script src="index.js" async></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;400&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- credits to fashionova - got products, product info and images from website -->
+    <!-- https://www.fashionnova.com/pages/about-us -->
+</head>
+
+
+<body>
+    <!-- HOME Page -->
+    <div id="home-page">
+        <!-- creation of the navbar -->
+        <div class="navbar">
+            <!-- business logo in navbar -->
+            <div class="logo">
+                <a class="brand-name" href="#">ADORA</a>
+            </div>
+            <nav>
+                <!-- navbar items - clickable links -->
+                <ul>
+                    <li><a href="index.html#home" class="page-click">Home</a></li>
+                    <li><a href="catalogue.html" class="page-click">Catalogue</a></li>
+                    <li><a href="index.html#about" class="page-click">About</a></li>
+                    <li><a href="contact.html" class="page-click">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- sign in and sign up buttons -->
+            <div class="account">
+                <a href="sign-in.html"><i class="far fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT INFORMATION -->
+    <div id="product-info">
+        <!-- creating the back button to go to previous page -->
+        <a href="catalogue.html#bottoms" class="back-btn">BACK</a>
+        <!-- creating a container to structure the content -->
+        <div class="info-container">
+            <!-- row class for flex-box -->
+            <div class="row">
+                <div class="col-2 img-flex">
+                    <!-- the image that will appear the largest -->
+                    <div class="main-img">
+                        <img src="Images/wash-jean1.jpg" alt="Needing Something Jeans">
+                    </div>
+                    <!-- smaller images can click on in future to make it large with javascript -->
+                    <div class="mini-img">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="Images/wash-jean1.jpg" alt="Needing Something Jeans">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/wash-jean2.jpg" alt="Needing Something Jeans">
+                            </div>
+                            <div class="col-3">
+                                <img src="Images/wash-jean3.jpg" alt="Needing Something Jeans">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- creating a content-flex class to make the content take less space compared to the image -->
+                <div class="col-2 content-flex">
+                    <h3>Needing Something Jeans</h3><br>
+                    <!-- ratings of the product -->
+                    <div class="ratings">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li class="review-amount">940 reviews</li>
+                        </ul>
+                    </div>
+                    <!-- adding a class for spesific styling -->
+                    <div class="price">
+                        <p class="original-price">R 364.00</p>
+                        <p class="new-price current-price">R 218.40</p>
+                    </div>
+                    <!-- size selection of product -->
+                    <div class="size-selection">
+                        <p>SIZE:</p>
+                        <ul>
+                            <li><a href="">XS</a></li>
+                            <li><a href="">S</a></li>
+                            <li><a href="">M</a></li>
+                            <li><a href="">L</a></li>
+                            <li><a href="">XL</a></li>
+                        </ul>
+                    </div>
+                    <!-- add to cart button (future functionality) -->
+                    <a href="" class="add-to-cart-btn">ADD TO CART</a>
+                    <!-- product details in list form -->
+                    <div class="product-details">
+                        <hr>
+                        <h4>PRODUCT DETAILS</h4>
+                        <ul>
+                            <li>Sequin Maxi Dress</li>
+                            <li>Tie Halter</li>
+                            <li>X Front</li>
+                            <li>Cut Outs</li>
+                            <li>High Slit</li>
+                            <li>Backless</li>
+                            <li>Back Zipper</li>
+                            <li>Lined</li>
+                            <li>Stretch</li>
+                            <li>Dress Length = 59"</li>
+                            <li>Self: 100% Polyester </li>
+                            <li>Lining: 100% Polyester </li>
+                            <li>Imported </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bottom section for top picks -->
+        <div class="top-picks">
+            <h1>TOP PICKS FOR</h1>
+            <div class="row">
+                <!-- product 1 -->
+                <div class="col-5">
+                    <!-- product image -->
+                    <a href="glam4.html"><img src="Images/blue-dress.jpg"
+                            alt="Luminous Sequin Velvet Maxi Dress - Royal">
+                        <!-- product name -->
+                        <h3>Luminous Sequin Velvet Maxi Dress</h3>
+                        <!-- product rating -->
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li class="review-amount">4 reviews</li>
+                        </ul>
+                        <!-- product price -->
+                        <p>R 1,012.00</p>
+                    </a>
+                </div>
+                <!-- product 2 -->
+                <div class="col-5">
+                    <!-- product image -->
+                    <a href="top3.html"><img src="Images/soft-top1.jpg" alt="Reminds Me Of You Top - Soft White">
+                        <!-- product name -->
+                        <h3>Reminds Me Of You Top</h3>
+                        <!-- product reviews -->
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li class="review-amount">56 reviews</li>
+                        </ul>
+                        <!-- product price -->
+                        <div class="price">
+                            <p class="original-price">R 262.00</p>
+                            <p class="new-price">R 157.20</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- product 3 -->
+                <div class="col-5">
+                    <!-- product image -->
+                    <a href="bottom4.html"><img src="Images/wash-jean1.jpg"
+                            alt="Needing Something Jeans - Light Blue Wash">
+                        <!-- product name -->
+                        <h3>Needing Something Jeans</h3>
+                        <!-- product rating -->
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li class="review-amount">940 reviews</li>
+                        </ul>
+                        <!-- product price -->
+                        <div class="price">
+                            <p class="original-price">R 364.00</p>
+                            <p class="new-price">R 218.40</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- product 4 -->
+                <div class="col-5">
+                    <!-- product image -->
+                    <a href="shoe2.html"><img src="Images/bootie-shoe1.jpg" alt="Catch Me Later Bootie - Chocolate">
+                        <!-- product name -->
+                        <h3>Catch Me Later Bootie</h3>
+                        <!-- product rating -->
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li class="review-amount">69 reviews</li>
+                        </ul>
+                        <!-- product price -->
+                        <div class="price">
+                            <p class="original-price">R 582.00</p>
+                            <p class="new-price">R 174.60</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- product 5 -->
+                <div class="col-5">
+                    <!-- product image -->
+                    <a href="dress2.html"><img src="Images/midi-dress1.jpg" alt="Need You Midi Dress - White">
+                        <!-- product name -->
+                        <h3>Need You Midi Dress</h3>
+                        <!-- product rating -->
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li class="review-amount">11 reviews</li>
+                        </ul>
+                        <!-- product price -->
+                        <p>R 364.00</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER Page -->
+    <div id="footer">
+        <!-- using row class for flexbox layout -->
+        <div class="row">
+            <!-- first column -->
+            <div class="footer-col-1">
+                <!-- download app section -->
+                <h3>DOWNLOAD OUR APP</h3>
+                <p>Available for IOS and Android</p>
+                <a href=""><i class="fab fa-google-play"> Google Play</i></a>
+                <a href=""><i class="fab fa-apple"> App Store</i></a>
+            </div>
+            <!-- second column -->
+            <div class="footer-col-2">
+                <!-- brand and slogan section -->
+                <img src="images/ADORA-logos_whitecrop.png" alt="ADORA Logo">
+                <p>We strive to make women feel comfortable and glamoroous at all times with our fashion line!</p>
+            </div>
+            <!-- third column -->
+            <div class="footer-col-3">
+                <!-- other links section -->
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="shipping.html">Shipping info</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="size-guide.html">Size Guide</a></li>
+                </ul>
+            </div>
+            <!-- fourth column -->
+            <div class="footer-col-4">
+                <!-- email list sign up and social links section -->
+                <h3>SIGN UP FOR UPDATES + DISCOUNTS</h3>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </form>
+                <p>By signing up for email, you agree to Adora's
+                    <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+                <ul>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- T's & C's section -->
+        <hr class="footer-line">
+        <p class="copyright"><span>© 2021 ADORA</span>, LLC All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>
